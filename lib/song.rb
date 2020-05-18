@@ -5,6 +5,7 @@ class Song
 
   def initialize(name)
     @name = name
+    @@all << self
   end
 
   def self.all
@@ -14,7 +15,7 @@ class Song
   def self.new_by_filename(filename)
     song = self.new
     song.name = filename.split(" - ")
-    @@all << song
+    song
   end
 
   def artist_name=(name)
