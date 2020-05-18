@@ -21,9 +21,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
     if name == nil
-      self.songs.each do |song|
-        song.name
-      end
+      artist = Artist.new(name)
     else
       self.songs.each do |song|
         song.name
