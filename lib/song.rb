@@ -13,7 +13,7 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    song.name = filename.split(" - ")
+    self.name = filename.split(" - ")
     @@all << song
   end
 
