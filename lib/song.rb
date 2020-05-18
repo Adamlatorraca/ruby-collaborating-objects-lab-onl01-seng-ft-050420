@@ -16,9 +16,8 @@ class Song
 
   def self.new_by_filename(filename)
     file = filename.chomp(".mp3").split(" - ")
-    binding.pry
-    song = song.new(file[1])
-    song.artist_name = file[0]
-    song
+    file.each do |name|
+      self.name = file[1]
+      self.artist = file[0]
   end
 end
