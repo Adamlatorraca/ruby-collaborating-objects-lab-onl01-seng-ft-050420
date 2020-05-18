@@ -20,5 +20,4 @@ class Artist
   def songs
    Song.artist.all
   end
- end
 end
