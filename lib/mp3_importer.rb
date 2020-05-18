@@ -7,7 +7,7 @@ class MP3Importer
 
   def files
     list_of_filenames = []
-    Dir.new(self.path).each do |file|
+    Dir.new(@path).each do |file|
       list_of_filenames << file
     end
     list_of_filenames
