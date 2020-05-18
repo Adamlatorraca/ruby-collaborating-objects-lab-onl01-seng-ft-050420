@@ -8,10 +8,11 @@ class MP3Importer
   def files
     list_of_filenames = []
     Dir.new(@path).each do |file|
-    if file.size == 4
-      list_of_filenames << file
+      if file.size == 4
+        list_of_filenames << file
+      end
+      list_of_filenames
     end
-    list_of_filenames
   end
 
   def import(list_of_filenames)
