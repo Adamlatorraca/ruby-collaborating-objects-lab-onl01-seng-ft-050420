@@ -1,7 +1,7 @@
 class MP3Importer
 
   def initialize(path)
-    @path = path
+    @path = ./spec/fixtures/mp3s
   end
 
   def files(list_of_filenames)
