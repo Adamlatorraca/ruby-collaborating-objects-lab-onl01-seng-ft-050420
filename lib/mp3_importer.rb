@@ -1,7 +1,7 @@
 class MP3Importer
   attr_accessor
 
-  def initialize(directory)
-    @directory = directory
+  def initialize(test_music_path)
+    @test_music_path = test_music_path
   end
 end
