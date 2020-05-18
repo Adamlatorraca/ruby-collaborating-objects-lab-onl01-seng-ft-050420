@@ -25,6 +25,9 @@ class Artist
         song.name
       end
     else
-      artist = Artist.new(name)
+      self.songs.each do |song|
+        song.name
+      end
+    end
   end
 end
