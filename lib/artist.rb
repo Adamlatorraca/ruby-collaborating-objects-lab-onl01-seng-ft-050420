@@ -30,5 +30,5 @@ class Artist
   def self.find_or_create_by_name(name)
    self.all.detect {|artist| artist.name == name} || Artist.new(name).save
   end
-end
+
 end
