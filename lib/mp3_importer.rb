@@ -8,8 +8,8 @@ class MP3Importer
   def files
     list_of_filenames = []
     Dir.new(@path).each do |file|
-    when file.size == 4
-        list_of_filenames << file
+    if file.size == 4
+      list_of_filenames << file
     end
     list_of_filenames
   end
