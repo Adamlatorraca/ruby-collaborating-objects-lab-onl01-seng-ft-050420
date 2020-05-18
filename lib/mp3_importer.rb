@@ -6,11 +6,11 @@ class MP3Importer
   end
 
   def files
-    list_of_filenames = []
+    filenames = []
     Dir.new(self.path).each do |file|
-        list_of_filenames << file if file.length > 4
+        filenames << file if file.length > 4
       end
-    list_of_filenames
+    filenames
   end
 
   def import
