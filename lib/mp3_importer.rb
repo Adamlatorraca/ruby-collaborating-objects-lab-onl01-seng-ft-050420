@@ -1,11 +1,11 @@
 class MP3Importer
 
   def initialize(path)
-    @path = String(path)
+    @path = path
   end
 
   def files(list_of_filenames)
-    
+
   end
 
   def import(list_of_filenames)
