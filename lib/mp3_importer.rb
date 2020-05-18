@@ -10,6 +10,7 @@ class MP3Importer
     Dir.new(self.path).each do |file|
       files  << file.split(" - ")
     end
+    files
   end
 
   def import
