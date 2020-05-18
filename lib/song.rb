@@ -19,7 +19,7 @@ class Song
     file.each do |name|
       self.name = file[1]
       self.artist = file[0]
-      @@all << self.name.artist
-    end
+      end
+    @@all << self.name.artist
   end
 end
