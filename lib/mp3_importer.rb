@@ -8,15 +8,15 @@ class MP3Importer
   end
 
   def files
-    filenames = []
+    files = []
     Dir.new(self.path).each do |file|
         filenames << file if file.length > 4
       end
-    filenames
+    files
   end
 
   def import
     binding.pry
-    self.filenames.each{ |file| Song.new_by_filename(filename) }
+    self.files.each{ |file| Song.new_by_filename(filename) }
   end
 end
