@@ -17,7 +17,7 @@ class Song
     song.name = filename.split(" - ")[1]
   end
 
-  def artist_name
+  def artist_name=(name)
     if (self.artist.nil?)
       self.artist = Artist.new(name)
     else
