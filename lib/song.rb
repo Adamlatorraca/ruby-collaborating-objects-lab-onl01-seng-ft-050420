@@ -12,15 +12,10 @@ class Song
     @@all
   end
 
-  def save
-    @@all << self
-    self
-  end
-
   def self.new_by_filename(filename)
     song = self.new
     song.name = filename.split(" - ")
-    song.save
+    song
   end
 
   def artist_name=(name)
