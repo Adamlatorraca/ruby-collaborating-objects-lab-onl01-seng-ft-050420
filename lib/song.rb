@@ -18,8 +18,9 @@ class Song
     file = filename.chomp(".mp3").split(" - ")
     file.each do |name|
       name = file[1]
-      artist = file[0]
+      self.artist = file[0]
       end
     @@all << self.name.artist
   end
+
 end
