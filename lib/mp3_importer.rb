@@ -1,7 +1,7 @@
 class MP3Importer
   attr_accessor
 
-  def initialize(/spec/fixtures)
-    @path = './spec/fixtures'
+  def initialize(directory)
+    @directory = directory
   end
 end
