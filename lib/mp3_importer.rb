@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files(list_of_filenames)
-
+    Dir.new('.').each {|file| puts file }
   end
 
   def import(list_of_filenames)
